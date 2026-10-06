@@ -60,7 +60,6 @@ class CurrencyWidget(ui.element):
 
     def _on_input_enter(self) -> None:
         self.amount = self._input.value
-        ui.notify(f'{self._input.prefix} {self._input.value}')
 
     def _on_input_focus(self) -> None:
         self._input.run_method('select')
